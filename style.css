@@ -2,14 +2,14 @@
 
 body {
     font-family: "Noto Sans KR", sans-serif;
-  background-color: ivory;
+  background-color: #f9f7f2;
   color :  black ;
   text-align: center;
 }
 
 h1 {
   font-size: 55px;
-  border: 30px solid #000000;
+  border: 30px solid #4e0003;
   border-radius:30px;
   padding: 6px 0;
   margin: 20px auto;
@@ -29,7 +29,7 @@ img {
 }
 
 a {
-  background-color: #ff9a9e;
+  background-color: #4e0003;
   display: block;
   padding: 20px 0;
   border-radius: 4px;
