@@ -2,23 +2,101 @@
 
 @import url();
 
+/* 기본 설정 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
 body {
-    background-image: url(../images/bg.png);
-    font-size: 16px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color: #999 
+    background-image: url('../images/bg.png'); 
+    background-color: #f8f9fa;
+    font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+    line-height: 1.6;
+    color: #333;
+    word-break: keep-all; 
 }
 
-header {
-    width: 1240px;
-    margin: 0 auto 44px;
-}
-h1 {
+
+.container {
+    max-width: 600px; 
+    margin: 50px auto;
+    padding: 60px 40px; 
+    background: #ffffff; 
+    border-radius: 30px;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.05); 
     text-align: center;
-    padding: 20px 0 16px;
 }
 
-nav > ul {
+
+h1 {
+    font-size: 2.5rem;
+    font-weight: 800;
+    margin-bottom: 40px;
+    letter-spacing: -0.02em;
+}
+
+h2 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+h3 {
+    display: inline-block;
+    font-size: 1rem;
+    background: #800000; 
+    color: white;
+    padding: 4px 12px;
+    border-radius: 4px;
+    margin: 30px 0 15px;
+}
+
+
+img {
+    max-width: 200px;
+    border-radius: 50%; 
+    margin: 20px 0;
+}
+
+
+ul, dl {
+    display: inline-block;
+    text-align: left;
+    margin: 20px 0;
+    min-width: 200px;
+}
+
+li, dt, dd {
+    font-size: 1rem;
+    margin-bottom: 8px;
+}
+
+dt { font-weight: 700; color: #800000; float: left; width: 60px; }
+dd { margin-left: 70px; }
+
+
+ol {
     display: flex;
+    justify-content: center;
+    gap: 10px;
+    list-style: none;
+    margin-top: 20px;
+}
+
+ol li a {
+    text-decoration: none;
+    color: #fff;
+    background: #333;
+    padding: 10px 20px;
+    border-radius: 30px;
+    font-size: 0.9rem;
+    transition: 0.3s;
+}
+
+ol li a:hover {
+    background: #800000;
+    transform: translateY(-3px);
 }
