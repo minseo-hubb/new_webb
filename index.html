@@ -1,99 +1,67 @@
 <!doctype html>
 <html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <title>자기소개</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.css">
+  <link rel="stylesheet" href="style.css">
+</head>
 
-
-  <head>
-    <meta charset="UTF-8" />
-    <title>자기소개</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.css">
-<link rel="stylesheet" href="style.css">
-  </head>
-  
-  
-  <body>
-    <div class="container">
-    <h1>자기소개</h1>
-    <h2>첫인사</h2>
-    <p class="intro-text">
-      안녕하세요. 정민서입니다<br />
-
-    </p>
-
-    <h2>자기소개</h2>
-    <img src="images/ganadi.png" alt="내사진" class="profile-img"/>
-    <p>
-      간단하게 제 소개를 해보겠습니다
-    </p>
-    </div>
-
-
-
-<div class="info-grid"> 
-  <section class="hobbies">
-    <h3>■ 취미</h3>
-    <ul>
-      <li>책읽기</li>
-      <li>맛집가기</li>
-      <li>사진찍기</li>
-    </ul></section>
-
-    <section class="details">
-    <h3>■ 기본 정보</h3>
-    <dl>
-      <dt>성명</dt>
-      <dd>정민서</dd>
-      <dt>연령</dt>
-      <dd>22세</dd>
-      <dt>직업</dt>
-      <dd>학생</dd>
-    </dl>
+<body>
+  <div class="container">
     
-    </section></div>
+    <header>
+      <h1>자기소개</h1>
+    </header>
 
-    <h3>사용하는 프로그램</h3>
-    <ul class="btn-group">
-      <li>
-        <a href="https://www.adobe.com/kr/products/photoshop" target="_blank">
-          photoshop
-        </a>
-      </li>
-      <li>
-        <a href="https://www.adobe.com/kr/products/illustrator" target="_blank">
-          illustrator</a>
-      </li>
-      <li>
-        <a href="https://share.google/UNuPk8jgKIdM1CGcU" target="_blank">
-          figma</a
-        >
-      </li>
-    </ul>
+    <div class="main-layout">
 
-    <h2>하고 싶은 말</h2>
-    <p>
-      좋은 디자이너가 되고싶습니다<br />
-      앞으로 잘 부탁드려요
-    </p>
+      <article class="left-content">
+        <h2>첫인사</h2>
+        <p class="intro-text">안녕하세요. 정민서입니다</p>
 
-    <h2>내가 생각하는 디자인이란</h2>
-    <p>
-      디자인에서 가장 중요한 것은 단순한 시각적 아름다움을 넘어서, 사람과 사람을
-      연결하는 힘입니다 <br />
-      디자인은 결국 누군가에게 보여지고, 경험되는 것이기 때문에 다양한 사람들의
-      시선에서 바라볼 수 있는 능력이 필요한 것 같습니다<br />
-      이를 위해서는 한 가지 관점에 머무르지 않고, 서로 다른 배경과 경험을
-      이해하려는 태도가 중요하고 <br />
-      다양한 경험을 통해 시야를 넓히고, 그것을 바탕으로 더 많은 사람들이 공감할
-      수 있는 디자인을 만들고 싶습니다 <br />
-    </p>
+        <h2>자기소개</h2>
+        <img src="images/ganadi.png" alt="내사진" class="profile-img"/>
+        <p>간단하게 제 소개를 해보겠습니다</p>
 
-    <h2>연락수단</h2>
-    <p>
-      아직 부족한 디자이너지만, 한 번 만나주시지 않겠습니까?<br />
-      대답은 아래 주소로 직접 오셔서 해주셔도 좋고, 휴대폰으로 전해주셔도
-      좋습니다.
-    </p>
-    <address>시디과 207호</address>
-    <p>010-0000-0000</p>
-    <!--  -->
-  </body>
+        <h3>사용하는 프로그램</h3>
+        <ul class="btn-group">
+          <li><a href="https://www.adobe.com/kr/products/photoshop" target="_blank">photoshop</a></li>
+          <li><a href="https://www.adobe.com/kr/products/illustrator" target="_blank">illustrator</a></li>
+          <li><a href="https://share.google/UNuPk8jgKIdM1CGcU" target="_blank">figma</a></li>
+        </ul>
+
+        <h2>하고 싶은 말</h2>
+        <p>좋은 디자이너가 되고싶습니다. 앞으로 잘 부탁드려요</p>
+
+        <h2>내가 생각하는 디자인이란</h2>
+        <p>디자인에서 가장 중요한 것은 단순한 시각적 아름다움을 넘어서, 사람과 사람을 연결하는 힘입니다. (중략)</p>
+
+        <h2>연락수단</h2>
+        <address>시디과 207호 / 010-0000-0000</address>
+      </article>
+
+      <aside class="right-sidebar">
+        <div class="info-grid"> 
+          <section class="hobbies card">
+            <h3>■ 취미</h3>
+            <ul>
+              <li>책읽기</li>
+              <li>맛집가기</li>
+              <li>사진찍기</li>
+            </ul>
+          </section>
+
+          <section class="details card">
+            <h3>■ 기본 정보</h3>
+            <dl>
+              <dt>성명</dt><dd>정민서</dd>
+              <dt>연령</dt><dd>22세</dd>
+              <dt>직업</dt><dd>학생</dd>
+            </dl>
+          </section>
+        </div>
+      </aside>
+
+    </div> </div> </body>
 </html>

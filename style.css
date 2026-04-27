@@ -1,55 +1,129 @@
 @charset "UTF-8";
 
+/* 전체 기본 설정 */
 body {
-    font-family: "Noto Sans KR", sans-serif;
-  background-color: #f9f7f2;
-  color :  black ;
-  text-align: center;
+    font-family: "Pretendard", sans-serif;
+    background-color: #b3b1ae; /* 배경색 유지 */
+    color: #333;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
 }
 
-h2, h3 {
-    margin-top: 50px; 
-    margin-bottom: 15px;
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
 }
 
-
+/* 헤더 스타일 */
 h1 {
-  font-size: 55px;
-  border: 30px solid #4e0003;
-  border-radius:30px;
-  padding: 6px 0;
-  margin: 20px auto;
-  width: 300px;
-  text-align: center;
+    font-size: 45px;
+    background-color: #fff;
+    border: 15px solid #4e0003;
+    border-radius: 20px;
+    padding: 10px 40px;
+    margin: 40px auto;
+    width: fit-content;
+    text-align: center;
 }
 
-p, ul {
-  text-align: center;
-  margin-bottom: 20px;
-
+/* 레이아웃 분할 (핵심!) */
+.main-layout {
+    display: flex;
+    gap: 40px;
+    align-items: flex-start; /* 내용 길이에 상관없이 위쪽 정렬 */
 }
 
-img {
-  border-radius: 50%;
-
+/* 왼쪽 영역 */
+.left-content {
+    flex: 1.8; /* 본문이 더 넓게 */
+    text-align: center;
 }
 
-a {
-  background-color: #4e0003;
-  display: block;
-  padding: 20px 0;
-  border-radius: 4px;
-  color: #ffffff;
-  font-weight: 600;
+.left-content h2 {
+    margin-top: 40px;
 }
 
-ul{
-  width: 300px;
-  margin: 0 auto;
-  text-align: center;
+.profile-img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 20px;
 }
 
-li {
-  margin-bottom: 20px;
-  text-align: center;
+/* 프로그램 버튼 그룹 */
+.btn-group {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.btn-group a {
+    background-color: #4e0003;
+    color: white;
+    text-decoration: none;
+    padding: 15px 60px;
+    border-radius: 8px;
+    display: block;
+    width: 200px;
+    transition: 0.3s;
+}
+
+.btn-group a:hover {
+    background-color: #6a0004;
+}
+
+/* 오른쪽 사이드바 (카드 디자인) */
+.right-sidebar {
+    flex: 1;
+}
+
+.card {
+    background-color: #f9f7f2; /* 살짝 밝은 배경 */
+    border-radius: 15px;
+    padding: 25px;
+    margin-bottom: 25px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    text-align: left; /* 카드 안은 왼쪽 정렬 */
+}
+
+.card h3 {
+    margin-top: 0;
+    color: #4e0003;
+    border-bottom: 2px solid #4e0003;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.card-list {
+    list-style: none;
+    padding: 0;
+}
+
+.card-list li {
+    margin-bottom: 10px;
+    padding-left: 10px;
+}
+
+/* 기본 정보 리스트 정렬 */
+.info-list {
+    margin: 0;
+}
+
+.info-item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    border-bottom: 1px dashed #ccc;
+    padding-bottom: 5px;
+}
+
+.info-item dt {
+    font-weight: bold;
+    color: #666;
 }
